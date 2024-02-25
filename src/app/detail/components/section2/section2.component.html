@@ -1,0 +1,47 @@
+<div class="">
+     <div class="flex mt-20 justify-between">
+        <div class="">
+            <div class="text-4xl font-bold {{isMenu?'animate-jump animate-delay-[100ms]':''}} ">{{innerBody.workPerform}}</div>
+            <div class=" {{isMenu?'animate-jump animate-delay-[200ms]':''}}  text-2xl mt-2 ml-2">{{innerBody.work}}</div>
+        </div>
+        <div>
+            <div class=" {{isMenu?'animate-jump animate-delay-[300ms]':''}}  text-4xl font-bold">{{innerBody.learn}}</div>
+            <div class=" {{isMenu?'animate-jump animate-delay-[400ms]':''}}  text-2xl mt-2 ml-2">{{innerBody.learPerform}}</div>
+        </div>
+        <div>
+            <div class=" {{isMenu?'animate-jump animate-delay-[500ms]':''}}  text-4xl font-bold">{{innerBody.communication}}</div>
+            <div class=" {{isMenu?'animate-jump animate-delay-[600ms]':''}}  text-2xl mt-2 ml-2" >{{innerBody.confidance}}</div>
+        </div>
+     </div>
+
+     <div class="flex justify-center"> 
+        <div class="mt-52">
+            <h1 class="text-5xl text-center ml-5 ">{{innerBody.software}}</h1>
+            <div class="flex justify-between  mt-20  ml-80">
+                
+                <div class="">
+                <i class="fa fa-television {{isMenu?'animate-fade-up animate-delay-[600ms]':''}}" aria-hidden="true"></i>
+                 <div class="mt-4 font-extrabold text-xl">{{innerBody.softwareKnown.IDE}}</div>
+                 <div class="mt-4 text-xl  font-bold ">{{innerBody.softwareKnown.Idx}}</div>
+                 <p class="mt-4 w-2/3">IDE are comprehensive software applications that provide developers with a centralized workspace for writing, testing,
+                and debugging code.</p>
+                </div>
+                <div class="mt-4">
+                    <i class="fa fa-eye {{isMenu?'animate-fade-up animate-delay-[700ms]':''}}" aria-hidden="true"></i>
+                    <div class="mt-4 font-extrabold text-xl">{{innerBody.softwareKnown.GIT}}</div>
+                    <div class="mt-4 text-xl w-1/2 font-bold ">{{innerBody.softwareKnown.Git}}</div>
+                    <p class="mt-4 w-1/2">VCSs, such as Git and Subversion (SVN), allow developers to collaborate seamlessly, work on different branches, merge
+                    code changes, and revert to previous versions if needed.</p>
+                </div>
+                <div class="">
+                    <i class="fa fa-coffee {{isMenu?'animate-fade-up animate-delay-[800ms]':''}}" aria-hidden="true"></i>
+                    <div class="mt-4 font-extrabold text-xl">{{innerBody.softwareKnown.TEAM}}</div>
+                    <div class="mt-4 text-xl w-1/4 font-bold ">{{innerBody.softwareKnown.Team}}</div>
+                    <p class="mt-4 w-1/2">Software development projects often involve multiple team members working on different tasks simultaneously. Project
+                    management and collaboration tools help streamline communication.</p>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+

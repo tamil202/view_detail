@@ -1,0 +1,14 @@
+.fa-television,
+.fa-eye,
+.fa-coffee {
+  font-size: 1em;
+  background-color: #e3b4fa;
+  padding: 30px;
+  border-radius: 10%;
+}
+.fa-eye {
+  background-color: #ffcda0;
+}
+.fa-coffee {
+  background-color: #b4dbfa;
+}

@@ -1,0 +1,23 @@
+<div class="flex justify-center min-h-screen items-center bg-gray-300">
+    <div class="bg-slate-200 p-20 rounded-xl">
+        <h1 class="text-5xl">Forget password</h1>
+        <p class=" text-xl mt-5 text-center">Enter Your Email Id to change password</p>
+        <form class="text-center mt-10">
+             <input type="email" required  [(ngModel)]="useremail.userinpdata" name="email" id="" placeholder="enter mail. . ." class="text-xl py-1 px-10  outline-none bg-transparent border-b border-black ">
+             <br>
+            <div class="mt-20" *ngIf="isconform">
+                <div>
+                    <input type="text" [(ngModel)]="password" name="password" id=""
+                        class="text-xl py-1 px-10  outline-none bg-transparent rounded-xl border border-black "
+                        placeholder="Enter new password"><br>
+                    <input type="text" [(ngModel)]="conformpassword" name="password" id=""
+                        class="text-xl py-1 px-10  outline-none bg-transparent border rounded-xl border-black mt-5 "
+                        placeholder="Enter conform password">
+                </div>
+            </div>
+             <button *ngIf="isbtn" (click)="isClick()" class=" transition-all ease-in bg-black text-white rounded-xl mt-10 text-xl px-5 py-1 hover:bg-gray-300 hover:text-black " [disabled]="!useremail.userinpdata" >Next</button>
+             <button *ngIf="isbtn1" (click)="ischeck()" class=" transition-all ease-in bg-black text-white rounded-xl mt-10 text-xl px-5 py-1 hover:bg-gray-300 hover:text-black " [disabled]="!password" >change</button>
+        </form>
+        
+    </div>
+</div>

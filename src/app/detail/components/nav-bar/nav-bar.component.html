@@ -1,0 +1,37 @@
+<div class="">
+
+   <div *ngIf="isMenux" class="flex justify-between items-center">
+        <div class=" flex  items-center text-2xl "><img class="mr-4 w-12 h-12 rounded-xl object-cover" [src]="navList.icon" alt="">TVA</div>
+    <ul class=" flex justify-between">
+        <li class="z-50 text-2xl  transition-all duration-300 ease-in-out px-5 py-3 ml-2  font-bold hover:border hover:border-red-500 hover:bg-white hover:rounded "> <a routerLink="home" RouterLinkActive="active">{{navList.home}}</a></li>
+        <li class="z-50 text-2xl  transition-all duration-300 ease-in-out px-5 py-3 ml-2  font-bold hover:border hover:border-red-500 hover:bg-white hover:rounded "> <a routerLink="about" RouterLinkActive="active">{{navList.about}}</a></li>
+        <li class="z-50 text-2xl  transition-all duration-300 ease-in-out px-5 py-3 ml-2  font-bold hover:border hover:border-red-500 hover:bg-white hover:rounded "> <a routerLink="contact" RouterLinkActive="active">{{navList.contact}}</a> </li>
+        <li class="z-50 text-2xl  transition-all duration-300 ease-in-out px-5 py-3 ml-2 font-bold hover:border hover:border-red-500  hover:bg-white hover:rounded  "> <a routerLink="" RouterLinkActive="active">{{navList.services}}</a></li>
+       <li class="flex justify-center min-w-full">
+        <button 
+            class="z-50 cursor-pointer text-xl ml-5 border-4 px-5 py-1 text-red-600  hover:text-red-800 rounded-xl border-red-600"
+            (click)="isLogin()">{{authList.authLogin}}</button>
+        <button class="z-50 cursor-pointer text-xl ml-5 bg-red-600 text-white px-5 py-1  rounded-xl hover:bg-red-700"
+            (click)="isRegister()">{{authList.authRegister}}</button>
+       </li>
+    </ul>
+    <ul>
+        
+    </ul>
+   </div>
+    <div *ngIf="isMenu" class="fixed  z-50   px-20 flex  ml-[500px] animate-fade-down animate-ease-linear   justify-center py-5 bg-white rounded-xl">
+        <div class=" flex  justify-center items-center text-2xl "><img class="mr-4 w-12 h-12 rounded-xl object-cover" [src]="navList.icon"
+                alt="">TVA</div>
+        <ul class="flex items-center justify-center">
+            <li
+                (click)="isLogin()"
+                class=" transition-all duration-300 ease-out text-xl ml-5 border-4 px-5 py-1 text-red-600 cursor-pointer hover:text-red-800 rounded-xl border-red-600">
+                {{authList.authLogin}}</li>
+            <li
+                (click)="isRegister()"
+                class="transition-all duration-300 ease-out text-xl ml-5 bg-red-600 text-white px-5 py-1  cursor-pointer rounded-xl hover:bg-red-700">
+                {{authList.authRegister}}</li>
+        </ul>
+    </div>
+  
+</div>
