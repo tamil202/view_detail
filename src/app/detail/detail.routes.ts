@@ -24,7 +24,7 @@ const routes = [
     loadComponent: () => import('./pages/curd/curd.component').then(c => c.CurdComponent)
   },{
     path: '**',
-    loadComponent: () => import('./pages/pagenotfound/pagenotfound.component').then(c => c.PagenotfoundComponent)
+    loadComponent: () => import('./pages/home/home.component').then(c => c.HomeComponent)
   }
 ];
 
